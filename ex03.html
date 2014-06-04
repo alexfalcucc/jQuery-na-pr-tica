@@ -1,0 +1,30 @@
+<!-- Nome: Alexsander Falcucci dos Santos
+	Exercícios de jQuery na Prática! -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>jQuery na prática!</title>
+	<script src="js/jquery-1.9.0.min.js" ></script>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<form>
+		Nome: <input type="text" name="nome" id="teste"> <br />
+		Email: <input type="text" name="email"><br />
+		CPF: <input type="text" name="cpf"><br />
+		<input type="password" name="senha">
+		<button type="button">Serializar!</button>
+		
+	</form>
+
+	<script>
+		$(document).ready(function() {
+			console.log( $("form").serialize() );
+		});
+	</script>
+	
+</body>
+</html>
